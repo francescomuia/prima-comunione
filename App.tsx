@@ -3,6 +3,8 @@ import CountdownTimer from './components/CountdownTimer';
 import InspirationCard from './components/InspirationCard';
 import { APP_TITLE, APP_SUBTITLE } from './constants';
 import { Star, Calendar, MapPin, Utensils, Sparkles } from 'lucide-react';
+import auroraImage from './images/aurora.jpg';
+import rugea from './images/rugea.png'
 
 const App: React.FC = () => {
   return (
@@ -64,7 +66,7 @@ const App: React.FC = () => {
                             Attualmente uso un'immagine segnaposto affidabile.
                         */}
                         <img 
-                            src="https://images.unsplash.com/photo-1596436906667-a2267f70b72a?w=800&auto=format&fit=crop&q=80" 
+                            src={auroraImage} 
                             alt="La festeggiata" 
                             className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110"
                         />
@@ -114,7 +116,7 @@ const App: React.FC = () => {
                         <div className="w-24 h-24 rounded-full bg-white flex items-center justify-center border-4 border-white shadow-md relative z-10 overflow-hidden">
                              {/* Nuova foto del Resort */}
                              <img 
-                                src="https://lh3.googleusercontent.com/p/AF1QipPUsirXWrtI6mknL5ioLKF49WdH-j4nwv6MandT=s680-w680-h510"
+                                src={rugea}
                                 alt="Resort La Rugea"
                                 className="w-full h-full object-cover"
                             />
